@@ -5,10 +5,15 @@ import Gallery from './Components/Gallery'
 import MeuInput from './Components/MeuInput'
 import ButtonModal from './Components/PropsModel/ButtonModal'
 import ExUseMemo from './Components/UseMemo/ExUseMemo'
+import ExUseEffect from './Components/UseEffect/ExUseEffect'
 
 export default function App() {
   //const [count, setC] = useState(0)
   const [text, setText] = useState<string>('')
+
+  // Para testar o useEffect no desmonte do componente
+  const [show, setShow] = useState(true);
+
   return (
     <div>
       <Gallery /><br />
@@ -23,6 +28,10 @@ export default function App() {
 
       <h1>UseMemo</h1>
       <ExUseMemo />
+
+      <h1>UseEffect</h1>
+      {show && <ExUseEffect /> }
+      <button  onClick={() => setShow(!show)}>testar onMounted e unMounted</button>
     </div>
   )
 }
