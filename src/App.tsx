@@ -6,6 +6,7 @@ import MeuInput from './Components/MeuInput'
 import ButtonModal from './Components/PropsModel/ButtonModal'
 import ExUseMemo from './Components/UseMemo/ExUseMemo'
 import ExUseEffect from './Components/UseEffect/ExUseEffect'
+import ExUseRef from './Components/UseRef/ExUseRef'
 
 export default function App() {
   //const [count, setC] = useState(0)
@@ -32,6 +33,9 @@ export default function App() {
       <h1>UseEffect</h1>
       {show && <ExUseEffect /> }
       <button  onClick={() => setShow(!show)}>testar onMounted e unMounted</button>
+
+      <h1>UseRef</h1>
+      <ExUseRef />
     </div>
   )
 }
