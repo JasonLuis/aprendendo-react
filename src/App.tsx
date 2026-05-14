@@ -7,6 +7,7 @@ import ButtonModal from './Components/PropsModel/ButtonModal'
 import ExUseMemo from './Components/UseMemo/ExUseMemo'
 import ExUseEffect from './Components/UseEffect/ExUseEffect'
 import ExUseRef from './Components/UseRef/ExUseRef'
+import ExUseCallback from './Components/UseCallback/ExUseCallback'
 
 export default function App() {
   //const [count, setC] = useState(0)
@@ -36,6 +37,9 @@ export default function App() {
 
       <h1>UseRef</h1>
       <ExUseRef />
+
+      <h1>UseCallback</h1>
+      <ExUseCallback />
     </div>
   )
 }
